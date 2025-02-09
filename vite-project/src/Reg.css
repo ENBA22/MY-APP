@@ -1,0 +1,71 @@
+.Rgg{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    margin-left: 40px;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 89%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+.img{
+    background: url(./assets/imm.png);
+    background-size: cover;
+    height: 728px;
+    width: 750px;
+}
+h3{
+    margin-left: 35%;
+}
+.Re{
+    color:goldenrod;
+    margin-top: 150px;
+    padding-top: 30px; 
+}
+.input{
+    padding: 10px;
+    margin: 20px;
+    margin-left: 32%;
+    width: 200px;
+    border:solid;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+.but{
+    margin-left: 43%;
+    border: solid;
+}
+.MK{
+    border: none;
+}
+
+.ee{
+    margin-left:45%;
+}
+.but:hover{
+    background-color: rgb(230, 158, 65);
+    cursor: pointer;
+}

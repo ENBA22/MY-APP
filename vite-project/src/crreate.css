@@ -1,0 +1,59 @@
+.Enb{
+    background: none;
+    justify-self: center;
+    padding-bottom: 30px;
+}
+.En{
+    background: none;
+    backdrop-filter: blur(20px);
+    display: block;
+    width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+    border: solid;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.Ef{
+    color:red;
+    margin-left: 35%;
+}
+select{
+    background: none;
+    margin-left: 80px;
+    margin-right: 25px;
+    backdrop-filter: blur(20px);
+    border: solid;
+    height: 50px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.op{
+    background: none;
+    background-color: none;
+
+}
+select:hover{
+    background-color: none;
+    background: none;
+    cursor: pointer;
+}
+.btn{
+    background: none;
+    backdrop-filter: blur(20px);
+    border: solid;
+    width: 90px;
+    height: 50px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+box-icon{
+    border: none;
+
+}
+.REF{
+    justify-content: space-evenly;
+    color:red ;
+}

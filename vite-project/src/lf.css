@@ -1,0 +1,54 @@
+.Lgg{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+.im{   
+    background: url(./assets/im1.jpg);
+    background-size: cover;
+    height: 710px;
+    margin: 10px;
+
+}
+h1{
+    background: none;
+    text-decoration:solid;
+}
+.fm{
+    background: none;
+    color: rgb(5, 5, 5);
+    margin: 10px;
+    margin-top: 150px;
+    justify-self: center;
+}
+.inputt{
+    margin-top: 20px;
+    width: 250px;
+    background: none;
+    border: solid;
+    border-radius: 5px;
+    height: 25px;
+}
+.butt{
+    box-sizing: border-box;
+    margin: 5px;
+    margin-left: 150px;
+    background: none;
+    border: solid;
+}
+.butt:hover{
+    background-color: rgb(240, 127, 127);
+    cursor: pointer;
+}
+.KK{
+    background: none;
+    margin-left: 100px
+}
+span{
+    background: none;
+    color: black;
+
+}
+box-icon{
+    background: none;
+    margin: 5px;
+}
