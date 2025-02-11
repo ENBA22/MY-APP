@@ -6,14 +6,7 @@ const createTodoModel = require("./model/todomodel");
 const passch=require("./model/passchecker")
 
 const app = express()
-app.use(cors(
-    {
-        origin:["https://appfr.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
-    }
-    
-))
+app.use(cors({ origin: 'https://appfr.vercel.app' }));
 app.use(express.json())
 
 
