@@ -6,11 +6,18 @@ const createTodoModel = require("./model/todomodel");
 const passch=require("./model/passchecker")
 
 const app = express()
-app.use(cors())
+app.use(cors(
+    {
+        origin:[],
+        methods:["POST","GET"],
+        credentials:true
+    }
+    
+))
 app.use(express.json())
 
 
-mongoose.connect("mongodb://localhost:27017/users")
+mongoose.connect("mongodb+srv://Enba:<Enba1221>@enba.y7rni.mongodb.net/TODOAPPUSERS?retryWrites=true&w=majority&appName=Enba")
 
 app.post("/login",(req,res)=>{
     const {email,password}=req.body;
