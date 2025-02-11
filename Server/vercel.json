@@ -7,13 +7,6 @@
     }
   ],
   "routes": [
-    {
-      "src": "/login",
-      "dest": "index.js"
-    },
-    {
-      "src": "/reg",
-      "dest": "index.js"
-    }
+    { "src": "/.*", "dest": "index.js" }
   ]
 }
