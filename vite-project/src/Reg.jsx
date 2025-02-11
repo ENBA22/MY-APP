@@ -15,7 +15,7 @@ function Reg() {
 
     const handlesub =(e)=>{
       e.preventDefault()
-      axios.post("http://localhost:3001/reg",{name,email,password})
+      axios.post("https://app-back-gamma.vercel.app/reg",{name,email,password})
       .then(result =>{
         if(result.data.message==="Password must be at least 8 characters and have both uppercase & lowercase letters"){
           alert("Weak Password !! check itt")
