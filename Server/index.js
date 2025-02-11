@@ -7,7 +7,7 @@ const passch=require("./model/passchecker")
 
 const app = express()
 app.use(cors({ 
-                origin: 'https://appfr.vercel.app',
+                origin: 'https://app-back-gamma.vercel.app',
                 methods:["POST","GET"],
                 credentials:true
              }
