@@ -14,7 +14,7 @@ function lf() {
 
     const handlelog =(e)=>{
       e.preventDefault()
-      axios.post("http://localhost:3001/login",{email,password})
+      axios.post("https://app-back-gamma.vercel.app/login",{email,password})
       .then(result =>{
         console.log(result.data)
         if(result.data.message==="login success"){
