@@ -8,7 +8,7 @@ function Create ({user}) {
   const [tag,setTag] = useState()
   
   const handleAdd = () => {
-    axios.post('https://app-back-gamma.vercel.app/add',{task : task ,tag : tag,name:user})
+    axios.post('https://app-back-phi.vercel.app/add',{task : task ,tag : tag,name:user})
     .then(result =>{
       location.reload()
     })
