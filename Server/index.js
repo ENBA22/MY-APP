@@ -11,7 +11,7 @@ app.use(cors({
                 methods:["POST","GET","PUT"],
                 headers:{
                   "Access-Control-Allow-Headers":"*"
-                }
+                },
                 credentials:true
              }
         ));
