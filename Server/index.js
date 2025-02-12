@@ -17,10 +17,6 @@ app.use(express.json())
 
 mongoose.connect("mongodb+srv://Enba:<Enba1221>@enba.y7rni.mongodb.net/TODOAPPUSERS?retryWrites=true&w=majority&appName=Enba")
 
-app.get("/",(req,res)=>{
-  res.json("HELLO")
-})
-
 app.post("/login",(req,res)=>{
     const {email,password}=req.body;
     usercrt.findOne({email:email})
