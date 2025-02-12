@@ -6,15 +6,12 @@ const createTodoModel = require("./model/todomodel");
 const passch=require("./model/passchecker")
 
 const app = express()
-app.use(cors({ 
-                origin: '*',
-                methods:["POST","GET","PUT"],
-                headers:{
-                  "Access-Control-Allow-Headers":"*"
-                },
-                credentials:true
-             }
-        ));
+app.use(cors({
+    origin: 'https://app-front-seven.vercel.app', // Specify allowed origin
+    methods: ['GET', 'POST', 'PUT', 'OPTIONS'], // Include OPTIONS
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allow necessary headers
+    credentials: true, // Allow cookies/auth headers
+}));
 app.use(express.json())
 
 
