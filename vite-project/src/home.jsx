@@ -14,13 +14,13 @@ function home () {
     console.log(username)
     useEffect(() => {
       axios
-        .get("https://app-back-gamma.vercel.app/get/"+username) // Include username in the request
+        .get("https://app-back-phi.vercel.app/get/"+username) // Include username in the request
         .then((result) => setTodos(result.data))
         .catch((err) => console.log(err));
     }, [username]);
 
     const handleedit = (id, username) => { 
-      axios.put(`https://app-back-gamma.vercel.app/update/${id}`, { username: username }) 
+      axios.put(`https://app-back-phi.vercel.app/update/${id}`, { username: username }) 
       .then(result => {
           location.reload();
       })
@@ -28,7 +28,7 @@ function home () {
     };
 
     const handletodo = (id, username) => { 
-      axios.put(`https://app-back-gamma.vercel.app/todoo/${id}`, { username: username }) 
+      axios.put(`https://app-back-phi.vercel.app/todoo/${id}`, { username: username }) 
       .then(result => {
           location.reload();
       })
@@ -36,7 +36,7 @@ function home () {
   };
   
     const handledone =(id, username)=>{
-      axios.put(`https://app-back-gamma.vercel.app/done/${id}`, { username: username })
+      axios.put(`https://app-back-phi.vercel.app/done/${id}`, { username: username })
       .then(result => {
         location.reload()
       })
@@ -44,7 +44,7 @@ function home () {
     }
 
     const handledel =(id, username)=>{
-      axios.put(`https://app-back-gamma.vercel.app/del/${id}`, { username: username })
+      axios.put(`https://app-back-phi.vercel.app/del/${id}`, { username: username })
       .then(result => {
         location.reload()
       })
